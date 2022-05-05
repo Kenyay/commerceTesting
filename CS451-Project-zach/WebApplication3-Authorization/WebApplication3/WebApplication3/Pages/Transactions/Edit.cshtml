@@ -1,0 +1,55 @@
+﻿@page
+@model WebApplication3.Pages.Transactions.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Transaction</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Transaction.ID" />
+            <div class="form-group">
+                <label asp-for="Transaction.TransactionDate" class="control-label"></label>
+                <input asp-for="Transaction.TransactionDate" class="form-control" />
+                <span asp-validation-for="Transaction.TransactionDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Transaction.TransactionType" class="control-label"></label>
+                <input asp-for="Transaction.TransactionType" class="form-control" />
+                <span asp-validation-for="Transaction.TransactionType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Transaction.Amount" class="control-label"></label>
+                <input asp-for="Transaction.Amount" class="form-control" />
+                <span asp-validation-for="Transaction.Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Transaction.Location" class="control-label"></label>
+                <input asp-for="Transaction.Location" class="form-control" />
+                <span asp-validation-for="Transaction.Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Transaction.Description" class="control-label"></label>
+                <input asp-for="Transaction.Description" class="form-control" />
+                <span asp-validation-for="Transaction.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary spacing" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-secondary spacing" asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

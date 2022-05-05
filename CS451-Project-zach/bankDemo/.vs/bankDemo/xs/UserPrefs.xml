@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{2A82C0AB-DEFE-4646-87FD-4D0EFF9B6971}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="bank/Pages/Notifications.cshtml">
+    <Files>
+      <File FileName="bank/Pages/Notifications.cshtml" Line="6" Column="1" />
+      <File FileName="bank/Pages/Notifications.cshtml.cs" Line="20" Column="2" />
+      <File FileName="bank/Pages/Shared/_Layout.cshtml" Line="4" Column="5" />
+      <File FileName="bank/Program.cs" Line="25" Column="1" />
+      <File FileName="bank/Pages/Shared/_Layout.cshtml.css" Line="5" Column="5" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="bankDemo" expanded="True">
+            <Node name="bank" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Notifications.cshtml" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.bank PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

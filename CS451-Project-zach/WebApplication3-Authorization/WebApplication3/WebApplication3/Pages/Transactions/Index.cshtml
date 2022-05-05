@@ -1,0 +1,58 @@
+﻿@page
+@model WebApplication3.Pages.Transactions.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Transactions</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Transaction[0].TransactionDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Transaction[0].TransactionType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Transaction[0].Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Transaction[0].Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Transaction[0].Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Transaction) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransactionDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransactionType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<a asp-page="Create" class="btn btn-primary">Create New Transaction</a>
